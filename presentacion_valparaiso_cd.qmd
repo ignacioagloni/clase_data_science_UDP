@@ -1,0 +1,452 @@
+---
+# title: ""Ciencia de datos para el sector público
+# author: "Ignacio Agloni"
+format:
+  revealjs:
+    auto-stretch: false
+    margin: 0
+    slide-number: true
+    scrollable: true
+    preview-links: auto
+    logo: imagenes/logo_portada2.png
+    css: ine_quarto_styles.css
+    includes:
+      in-header:
+        - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+    # footer: <https://quarto.org>
+    
+---
+
+#
+
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+
+[**CIENCIA DE DATOS PARA EL SECTOR PÚBLICO**]{.big-par .center-justified}
+
+[**La experiencia del Instituto Nacional de Estadísticas**]{.big-par .center-justified}
+
+[**Agosto 2024**]{.big-par .center-justified}
+
+
+## Presentación {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Speaker]{.medium-par}
+
+[**Ignacio Agloni**]{.big-par}
+
+[*Jefe Unidad de Gobierno de Datos - Instituto Nacional de Estadísticas*]{.medium-par} </br>
+[*Magister(c) en Tecnologías de la Información - Universidad de Chile*]{.medium-par} </br>
+[*Sociólogo - Universidad de Chile*]{.medium-par} <br/>
+
+[<img src="imagenes/outlook-icon.png" alt="Outlook" style="width:60px; vertical-align:middle;"/> ifaglonij@ine.gob.cl]{.medium-par}
+
+[<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/ignacioagloni](https://github.com/ignacioagloni)]{.medium-par}
+
+:::
+
+## Tópicos a tratar {transition="convex"}
+
+</br>
+
+- [*Principales proyectos*]{.big-par}
+
+- [*Herramientas y arquitectura*]{.big-par}
+
+- [*Oportunidades y desafíos para la ciencia de datos en el sector público*]{.big-par}
+
+
+# {background-color="white" transition="slide"}
+
+[Principales proyectos]{.big-par2}
+
+## Procesamiento de lenguaje natural {transition="convex"}
+
+[Modelos de codificación automática en encuestas de hogares]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/ocupacion.JPG" style="width:350px;" class="fragment" data-fragment-index="1"/>
+</div>
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/reloj.png" style="width:150px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
+  <img src="imagenes/peso.jpg" style="width:150px;" class="fragment" data-fragment-index="3"/>
+</div>
+
+
+## Aplicaciones de codificación automática {transition="convex"}
+
+::: {.panel-tabset}
+
+### [APIs]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/api-restaurante.JPG" style="width:850px;"/>
+</div>
+
+### [CIUO y CAENES]{.medium-par}
+
+**CIUO-08:** es el Clasificador Internacional Uniforme de Ocupaciones </br>
+**CAENES:** es el Clasificador de Actividades Económicas Nacional para Encuestas Sociodemográficas
+
+[Puedes acceder al tutorial de uso de esta API a través de este enlace ](https://www.ine.gob.cl/calidad-estadistica/clasificaciones/api-codificacion)
+
+[<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/inesscc/ineclassifiers](https://github.com/inesscc/ineclassifiers)]{.medium-par}
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="imagenes/tutorial-api.JPG" style="width:450px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/tutorial-api2.JPG" style="width:450px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+### [Clasificación delitos]{.medium-par}
+
+Modelo desarrollado para la revisión de calidad de la Encuesta de Victimización (ENUSC)
+
+Capa de embeddings + **LSTM** (Long Short-Term Memory)
+
+[La aplicación (de acceso interno) puede encontrarse en este link (Swagger)](http://10.90.2.47:3123/docs)
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/diagrama-delitos.png" style="width:400px; margin-right: 20px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/swagger-delitos.JPG" style="width:500px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
+  <img src="imagenes/sorpresa.JPG" style="width:250px;" class="fragment" data-fragment-index="3"/>
+</div>
+
+:::
+
+## Paquete calidad en R {transition="convex"}
+
+</br> 
+
+*Es el **primer paquete en R desarrollado en el INE** y con **colaboración de CEPAL***
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/estandar.JPG" style="width:300px; margin-right: 20px;"/>
+  <img src="imagenes/lumley.JPG" style="width:500px; margin-top: 40px;"/>
+</div>
+
+Tiene **8207 descargas totales** hasta ayer
+
+Tiene **322 descargas** el último mes
+
+Tiene **100 descargas** la última semana
+
+[<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/inesscc/calidad](https://github.com/inesscc/calidad)]{.medium-par}
+
+## Estratificación con imágenes satelitales {transition="convex"}
+
+::: {.panel-tabset}
+
+### [UPM]{.medium-par}
+
+Este ejercicio se desarrolló en el Gran Santiago
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/upm-estratificacion.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [Labels]{.medium-par}
+
+Entrenamos con ~1450 UPMs (e imágenes) con datos de ingreso
+
+Ingreso per cápita de 3 encuestas:
+
+    - Encuesta de Presupuestos Familiares 
+    - Piloto CASEN
+    - Encuesta Suplementaria de Ingresos
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/mean_upm.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+### [Redes Neuronales?]{.medium-par}
+
+
+Nos decantamos por un modelo de ML tradicional (XGBoost)
+
+**No siempre las redes neuronales funcionan mejor**
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/meme.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+### [Features]{.medium-par}
+
+Usamos:
+
+Detección de árboles <br/>
+Detección de piscinas <br/>
+Intensidad de luces nocturnas <br/>
+Registros administrativos: cercanía a colegios, estaciones de metro, comisarías, farmacias, etc.
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/trees.JPG" style="width:400px; margin-right: 20px;"/>
+</div>
+
+### [Predicción]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/prediccion.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [App]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/app1-estratificacion.png" style="width:600px; margin-right: 20px;"/>
+</div>
+
+:::
+
+## Seguimiento operativo con paradatos {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Contexto]{.medium-par}
+
+</br>
+
+**¿Qué son los paradatos?**
+
+Son todos los **registros brutos de cada acción** que se realiza en las entrevistas (dispositivos móviles de captura)
+
+**Son datos grandes:** Durante el levantamiento de ENUSC 2023 se alcanzó un total de **66.375.084** observaciones
+
+Permiten **detectar desviaciones** en la correcta aplicación de una encuesta
+
+Es el caso de uso más profundo de un **Lago de Datos**
+
+La salida de este flujo de datos es un **dashboard con tablas y visualizaciones**
+
+### [Metodología]{.medium-par}
+
+Se utilizó un **orquestador de flujos de trabajo (Dagster)**
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/dagster.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+Y una combinación de modelos **supervisado** (XGBoost) y **no supervisado** (K-Means)
+
+### [Dashboard]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/grafico-paradatos.png" style="width:1100px; margin-right: 20px;"/>
+</div>
+
+:::
+
+## Innominación de documentos con DL {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Requerimiento]{.medium-par}
+
+Requerimiento de Transparencia al Sector público de **públicar informes de actividades de personal a honorarios**
+
+No es posible divulgar nombre junto con rut y firmas de personas
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/ej_informe1.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+Debe publicarse así:
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/informe-innominado.JPG" style="width:400px; margin-right: 20px;"/>
+</div>
+
+
+### [Modelo]{.medium-par}
+
+Etiquetamos internamente ~1000 imágenes
+
+El modelo YOLOv *You Only Look Once*, es un modelo de detección de objetos proveniente del paquete Ultralytics, diseñado con *deep learning*
+
+El modelo cuenta con 24 capas convolucionales y 2 capas de conexión completa
+
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/model_comparison.png" style="width:400px; margin-right: 20px;"/>
+</div>
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/resultados-yolo.png" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [Arquitectura]{.medium-par}
+
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/diagrama-innominacion.png" style="width:700px; margin-right: 20px;"/>
+</div>
+
+:::
+
+## Detección de dobles marcas en SIMCE {transition="convex"}
+
+::: {.panel-tabset}
+
+### [SIMCE]{.medium-par}
+
+Esta es una colaboración del INE a la **Agencia de Calidad de la Educación** y el **Laboratorio de Gobierno**
+
+El INE se posiciona como una **institución con un equipo potente de ciencia de datos** a nivel del sector público
+
+**Objetivo:** generar un modelo que detecte las **dobles marcas** en cuestionarios SIMCE
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/simce1.jpg" style="width:600px; margin-right: 20px;"/>
+</div>
+
+### [OCR]{.medium-par}
+
+El **SIMCE se revisa por completo por personas**, que corroboran lo que registra el OCR
+
+El OCR reacciona ante estímulos mínimos como **doble marca** 
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/doble-marca.JPG" style="width:300px; margin-right: 20px;"/>
+  <img src="imagenes/no-doble-marca.JPG" style="width:300px; margin-top: 20px;"/>
+</div>
+
+### [Solución]{.medium-par}
+
+El **SIMCE se revisa por completo por personas**, que corroboran lo que registra el OCR
+
+El OCR reacciona ante estímulos mínimos como **doble marca** 
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/solucion-simce.JPG" style="width:600px; margin-right: 20px;"/>
+</div>
+
+::: 
+
+## Predicción de incendios con DL {transition="convex"}
+
+Este es un caso de uso de un **Lago de Datos para Ciencia de Datos en el INE**
+
+Fue desarrollado en conjunto con el **INEGI de México** en el marco de un **proyecto bilateral**
+
+Escogimos como territorio la **región de Valparaíso**, debido a los recientes incendios que han afectado a la región
+
+Se utilizaron **imágenes satelitales** (satélite MODIS) y fuentes externas de datos: **elevacion, temperatura, viento**, entre otros
+
+Se utilizó un modelo de **redes neuronales LSTM**
+
+Se toman datos de 10 días previos y se predice el día 11
+
+Este trabajo se presentó en la **VIII Conferencia de Big Data y Ciencia de Datos** en Bilbao, España, en junio de eeste año
+
+</br>
+[Dashboard](https://cienciadedatos.inegi.org.mx/laboratorio/wildfires/){.big-par .center}
+
+## ¿Dónde está el Censo? {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Censo 2024]{.medium-par}
+
+Requerimiento del equipo de **Censo de Población y Vivienda 2024**
+
+Désarrollo ágil: **~2 meses**
+
+Alta complejidad por la **alta concurrencia** y necesidad de **actualización rápida por contingencias en el terreno**
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/dondeesta1.jpg" style="width:400px; margin-right: 20px;"/>
+  <img src="imagenes/dondeesta2.jpg" style="width:400px; margin-top: 20px;"/>
+</div>
+
+### [Arquitectura]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/arquitectura-censo.JPG" style="width:700px; margin-right: 20px;"/>
+</div>
+
+:::
+
+# {background-color="white" transition="slide"}
+
+[Herramientas y arquitectura]{.big-par2}
+
+## Propuesta arquitectura para una oficina estadística {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/arquitectura-lago.jpg" style="width:1000px; margin-right: 20px;"/>
+</div>
+
+# {background-color="white" transition="slide"}
+
+[Oportunidades y desafíos para la ciencia de datos en el sector público]{.big-par2}
+
+## Oportunidades y desafios {transition="convex"}
+
+::: {.panel-tabset}
+
+### [Oportunidades]{.medium-par}
+
+- La ciencia de datos tiene un gran potencial para **optimizar procesos en el sector público**
+
+- Con el avance tecnológico en *hardware* y el **boom de la inteligencia artificial** se ha abierto un importante **campo interdisciplinario entre los equipos técnicos y de tecnología**
+
+- Se abre la oportunidad de aprovechar **fuentes no tradicionales** de información (imágenes satelitales, datos de telefonía celular, etc.)
+
+- Posibilidad de ampliar la oferta estadística <span>&#8594;</span> **estadísticas experimentales basadas en ciencia de datos**
+
+
+### [Desafios]{.medium-par}
+
+- **No ha sido fácil llegar a donde estamos** (tensión entre lo **urgente** y lo **estrétegico**)
+
+- **Brechas en capital humano en el estado** / sueldos menos competitivos que en el sector privado para equipos de tecnología y nuevos perfiles
+
+- **Poca infraestructura informática** en el Estado y en general **antigua**
+
+- **Restricciones normativas** para la migración a *cloud*, que podría ser más ágil
+
+- Dificultades para la compra de infraestructura informática más moderna 
+
+:::
+
+## Contacto {transition="convex"}
+
+</br>
+</br>
+</br>
+</br>
+
+[**Ignacio Agloni**]{.big-par}
+
+[Jefe Unidad de Gobierno de Datos - Instituto Nacional de Estadísticas]{.medium-par} </br>
+
+[<img src="imagenes/outlook-icon.png" alt="Outlook" style="width:60px; vertical-align:middle;"/> ifaglonij@ine.gob.cl]{.medium-par}
+
+
+
+#
+
+[]{.linea-superior} 
+[]{.linea-inferior} 
+
+<!---
+ <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
+--->
+
+<img src="imagenes/logo_portada2.png" width="20%"/>  
+
+
+[**GRACIAS**]{.big-par .center-justified}
+
+[**CIENCIA DE DATOS PARA EL SECTOR PÚBLICO**]{.big-par .center-justified}
+
+[**La experiencia del Instituto Nacional de Estadísticas**]{.big-par .center-justified}
+
+[**Agosto 2024**]{.big-par .center-justified}
+
