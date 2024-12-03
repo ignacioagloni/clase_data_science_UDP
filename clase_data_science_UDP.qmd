@@ -64,7 +64,7 @@ format:
 
 [- *Nuevas habilidades demandadas*]{.big-par .fragment}
 
-[- *¿Cuali v/s Cuanti?*]{.big-par .fragment}
+[- *¿Cuanti v/s Cuali?*]{.big-par .fragment}
 
 
 # {background-color="white" transition="slide"}
@@ -269,6 +269,20 @@ $y = f(DatosTelefono)$
 
 :::
 
+# {background-color="white" transition="slide"}
+
+[Ciencia de datos e IA en el INE]{.big-par2}
+
+## Organización del equipo de ciencia de datos {transition="convex"}
+
+<div style="text-align: center;">
+  <img src="imagenes/organigrama.png" style="width:900px;">
+</div>
+
+# {background-color="white" transition="slide"}
+
+[Principales proyectos y aplicaciones]{.big-par2}
+
 ## Aplicaciones de codificación automática {transition="convex"}
 
 ::: {.panel-tabset}
@@ -320,11 +334,11 @@ Capa de embeddings + **LSTM** (Long Short-Term Memory)
   <img src="imagenes/lumley.JPG" style="width:500px; margin-top: 40px;"/>
 </div>
 
-Tiene **8207 descargas totales** hasta ayer
+Tiene **9294 descargas totales** hasta la semana pasada
 
-Tiene **322 descargas** el último mes
+Tiene **367 descargas** el último mes
 
-Tiene **100 descargas** la última semana
+Tiene **79 descargas** la última semana
 
 [<img src="imagenes/GitHub-icon.png" alt="GitHub" style="width:40px; vertical-align:middle;"/> [https://github.com/inesscc/calidad](https://github.com/inesscc/calidad)]{.medium-par}
 
@@ -404,7 +418,7 @@ Registros administrativos: cercanía a colegios, estaciones de metro, comisaría
 
 Son todos los **registros brutos de cada acción** que se realiza en las entrevistas (dispositivos móviles de captura)
 
-**Son datos grandes:** Durante el levantamiento de ENUSC 2023 se alcanzó un total de **66.375.084** observaciones
+**Son datos grandes:** durante el levantamiento de ENUSC 2023 se alcanzó un total de **66.375.084** observaciones
 
 Permiten **detectar desviaciones** en la correcta aplicación de una encuesta
 
@@ -562,60 +576,86 @@ Alta complejidad por la **alta concurrencia** y necesidad de **actualización r�
 
 # {background-color="white" transition="slide"}
 
-[Herramientas y arquitectura]{.big-par2}
+[Nuevas habilidades demandadas]{.big-par2}
 
-## Propuesta arquitectura para una oficina estadística {transition="convex"}
+## Nuevas habilidades demandadas {transition="convex"}
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-  <img src="imagenes/arquitectura-lago.jpg" style="width:1000px; margin-right: 20px;"/>
+  <img src="imagenes/nuevas_habilidades.png" style="width:900px; margin-right: 20px;"/>
+</div>
+
+## Nuevas habilidades demandadas {transition="convex"}
+
+<br/>
+
+[- La sociología entra en el campo de las **tecnologías de la información**]{.big-par .fragment}
+
+[- Mayor colaboración profesionales de la informática]{.big-par .fragment}
+
+[- **Disposición a estudiar y aprender nuevas herramientas constantemente**]{.big-par .fragment}
+
+[- Mayor disposición a **salir de nuestra zona de confort**]{.big-par .fragment}
+
+[- Apertura hacia nuevas metodologías y fuentes de información]{.big-par .fragment}
+
+# {background-color="white" transition="slide"}
+
+[¿Cuanti v/s Cuali?]{.big-par2}
+
+## ¿Cuanti v/s Cuali? {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/cuanticuali.jpg" style="width:800px; margin-right: 20px;"/>
+</div>
+
+## ¿Cuanti v/s Cuali? {transition="convex"}
+
+
+[Si quisiéramos estudiar la **ideología de los partidos**, usando sus **declaraciones de principios**]{.medium-par}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/ejemplo_declaracion.png" style="width:800px; margin-right: 20px;"/>
+</div>
+
+[¿Qué enfoque o estrategia se adecúa mejor a este problema? ¿**Cuantitativo o cualitativo**?]{.medium-par .center}
+
+
+## Wordfish (Slapin & Proksch, 2008) {transition="convex"}
+
+<br/>
+
+[Hacemos un pre procesamiento, para **representar el texto de manera numérica**]{.medium-par} 
+
+<br/>
+
+$y_{ij}=Poisson(\lambda_{ij})$<br>
+
+$\lambda_{ij} = exp(\alpha_{i} + ψ_j + β_j ∗ ω_{i})$<br>
+
+$j$: palabra<br>
+
+$i$: partido<br>
+
+$ω$: Parámetro que indica la posición de un actor/partido<br>
+
+$β$: Poder discriminador de las palabras<br>
+
+
+## Posicionamiento "ideológico" {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/wordfish_declaraciones.png" style="width:700px; margin-right: 20px;"/>
+</div>
+
+## Poder descriminador de palabras {transition="convex"}
+
+<div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
+  <img src="imagenes/palabras.png" style="width:750px; margin-right: 20px;"/>
 </div>
 
 # {background-color="white" transition="slide"}
 
-[Oportunidades y desafíos para la ciencia de datos en el sector público]{.big-par2}
-
-## Oportunidades y desafios {transition="convex"}
-
-::: {.panel-tabset}
-
-### [Oportunidades]{.medium-par}
-
-- La ciencia de datos tiene un gran potencial para **optimizar procesos en el sector público**
-
-- Con el avance tecnológico en *hardware* y el **boom de la inteligencia artificial** se ha abierto un importante **campo interdisciplinario entre los equipos técnicos y de tecnología**
-
-- Se abre la oportunidad de aprovechar **fuentes no tradicionales** de información (imágenes satelitales, datos de telefonía celular, etc.)
-
-- Posibilidad de ampliar la oferta estadística <span>&#8594;</span> **estadísticas experimentales basadas en ciencia de datos**
-
-
-### [Desafios]{.medium-par}
-
-- **No ha sido fácil llegar a donde estamos** (tensión entre lo **urgente** y lo **estrétegico**)
-
-- **Brechas en capital humano en el estado** / sueldos menos competitivos que en el sector privado para equipos de tecnología y nuevos perfiles
-
-- **Poca infraestructura informática** en el Estado y en general **antigua**
-
-- **Restricciones normativas** para la migración a *cloud*, que podría ser más ágil
-
-- Dificultades para la compra de infraestructura informática más moderna 
-
-:::
-
-## Contacto {transition="convex"}
-
-</br>
-</br>
-</br>
-</br>
-
-[**Ignacio Agloni**]{.big-par}
-
-[Jefe Unidad de Gobierno de Datos - Instituto Nacional de Estadísticas]{.medium-par} </br>
-
-[<img src="imagenes/outlook-icon.png" alt="Outlook" style="width:60px; vertical-align:middle;"/> ifaglonij@ine.gob.cl]{.medium-par}
-
+[¿Esta es una investigación cuanti o cuali?]{.big-par2}
 
 
 #
@@ -632,9 +672,9 @@ Alta complejidad por la **alta concurrencia** y necesidad de **actualización r�
 
 [**GRACIAS**]{.big-par .center-justified}
 
-[**CIENCIA DE DATOS PARA EL SECTOR PÚBLICO**]{.big-par .center-justified}
+[**CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL PARA LA PRODUCCIÓN ESTADÍSTICA**]{.big-par .center-justified}
 
 [**La experiencia del Instituto Nacional de Estadísticas**]{.big-par .center-justified}
 
-[**Agosto 2024**]{.big-par .center-justified}
+[**Diciembre 2024**]{.big-par .center-justified}
 
