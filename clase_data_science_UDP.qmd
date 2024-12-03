@@ -116,7 +116,7 @@ format:
 ## Empresas que manejan muchos datos {transition="convex"}
 
 <div style="text-align: center;">
-  <img src="imagenes/marcas.png" style="width:1200px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/marcas.PNG" style="width:1200px;" class="fragment" data-fragment-index="1"/>
 </div>
 
 ##  ¿Qué información se registra actualmente? {transition="convex"}
@@ -144,7 +144,7 @@ format:
 <br/>
 
 <div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
-  <img src="imagenes/ejemplo_empresas.png" style="width:400px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/ejemplo_empresas.PNG" style="width:400px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
   <img src="imagenes/ingeniero_informatico.jpeg" style="width:400px;" class="fragment" data-fragment-index="2"/>
 </div>
 
@@ -276,7 +276,7 @@ $y = f(DatosTelefono)$
 ## Organización del equipo de ciencia de datos {transition="convex"}
 
 <div style="text-align: center;">
-  <img src="imagenes/organigrama.png" style="width:900px;">
+  <img src="imagenes/organigrama.PNG" style="width:900px;">
 </div>
 
 # {background-color="white" transition="slide"}
@@ -650,7 +650,7 @@ $β$: Poder discriminador de las palabras<br>
 ## Poder descriminador de palabras {transition="convex"}
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: flex-start;">
-  <img src="imagenes/palabras.png" style="width:750px; margin-right: 20px;"/>
+  <img src="imagenes/palabras.PNG" style="width:750px; margin-right: 20px;"/>
 </div>
 
 # {background-color="white" transition="slide"}
