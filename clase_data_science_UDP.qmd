@@ -26,12 +26,11 @@ format:
 
 <img src="imagenes/logo_portada2.png" width="20%"/>  
 
-
-[**CIENCIA DE DATOS PARA EL SECTOR PÚBLICO**]{.big-par .center-justified}
+[**CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL PARA LA PRODUCCIÓN ESTADÍSTICA**]{.big-par .center-justified}
 
 [**La experiencia del Instituto Nacional de Estadísticas**]{.big-par .center-justified}
 
-[**Agosto 2024**]{.big-par .center-justified}
+[**Diciembre 2024**]{.big-par .center-justified}
 
 
 ## Presentación {transition="convex"}
@@ -42,8 +41,9 @@ format:
 
 [**Ignacio Agloni**]{.big-par}
 
-[*Jefe Unidad de Gobierno de Datos - Instituto Nacional de Estadísticas*]{.medium-par} </br>
-[*Magister(c) en Tecnologías de la Información - Universidad de Chile*]{.medium-par} </br>
+[*Jefe Unidad de Gobierno y Ciencia de Datos - Instituto Nacional de Estadísticas*]{.medium-par} </br>
+[*Master en Tecnologías de la Información - Universidad de Chile*]{.medium-par} </br>
+[*Postitulos en ciencia de datos, inteligencia artificial, ingeniería de software y desarrollo web*]{.medium-par} </br>
 [*Sociólogo - Universidad de Chile*]{.medium-par} <br/>
 
 [<img src="imagenes/outlook-icon.png" alt="Outlook" style="width:60px; vertical-align:middle;"/> ifaglonij@ine.gob.cl]{.medium-par}
@@ -52,34 +52,222 @@ format:
 
 :::
 
-## Tópicos a tratar {transition="convex"}
+## Temas a revisar {transition="convex"}
 
 </br>
 
-- [*Principales proyectos*]{.big-par}
+[- *Contexto*]{.big-par .fragment}
 
-- [*Herramientas y arquitectura*]{.big-par}
+[- *¿Qué pasa con las ciencias sociales?*]{.big-par .fragment}
 
-- [*Oportunidades y desafíos para la ciencia de datos en el sector público*]{.big-par}
+[- *Ciencia de datos e IA en el INE*]{.big-par .fragment}
+
+[- *Nuevas habilidades demandadas*]{.big-par .fragment}
+
+[- *¿Cuali v/s Cuanti?*]{.big-par .fragment}
 
 
 # {background-color="white" transition="slide"}
 
-[Principales proyectos]{.big-par2}
+[Contexto]{.big-par2}
 
-## Procesamiento de lenguaje natural {transition="convex"}
-
-[Modelos de codificación automática en encuestas de hogares]{.medium-par}
+## Cantidad de datos creados al año {transition="convex"}
 
 <div style="text-align: center;">
-  <img src="imagenes/ocupacion.JPG" style="width:350px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/volumen_data.png" style="width:600px;" class="fragment" data-fragment-index="1"/>
 </div>
+
+<p class="fragment" data-fragment-index="2" style="text-align: center;">
+  $zettabyte = 10^{12}gb \approx$ 44.444.444.444 horas de video en 4k
+</p>
+
+## Capacidad de cómputo {transition="convex"}
+
+<br/>
 
 <div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
-  <img src="imagenes/reloj.png" style="width:150px; margin-right: 20px;" class="fragment" data-fragment-index="2"/>
-  <img src="imagenes/peso.jpg" style="width:150px;" class="fragment" data-fragment-index="3"/>
+  <img src="imagenes/capacidad.png" style="width:500px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/ajedrez.png" style="width:500px;" class="fragment" data-fragment-index="2"/>
 </div>
 
+## Abaratamiento de la tecnología {transition="convex"}
+
+<br/>
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/costo_memoria.png" style="width:500px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/gpu.png" style="width:500px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+## Escenario de... {transition="convex"}
+
+<br/>
+
+[- Digitalización de la comunicación]{.medium-par .fragment}
+
+[- Aumento en la capacidad de almacenamiento y procesammiento]{.medium-par .fragment}
+
+[- Abaratamiento del *hardware*]{.medium-par .fragment}
+
+<br/>
+
+[Se crean, procesan y almacenan datos en todo momento]{.big-par .fragment}
+
+## Empresas que manejan muchos datos {transition="convex"}
+
+<div style="text-align: center;">
+  <img src="imagenes/marcas.png" style="width:1200px;" class="fragment" data-fragment-index="1"/>
+</div>
+
+##  ¿Qué información se registra actualmente? {transition="convex"}
+
+<br/>
+
+[- Preferencias de consumo]{.medium-par .fragment}
+
+[- Gustos musicales y audiovisuales]{.medium-par .fragment}
+
+[- Opiniones políticas]{.medium-par .fragment}
+
+[- Patrones de desplazamiento]{.medium-par .fragment}
+
+[- Patrones de consumo]{.medium-par .fragment}
+
+[- Cantidad, momento y tipo de interacciones]{.medium-par .fragment}
+
+<br/>
+
+[¡Se produce muchísima información sobre el comportamiento humano!]{.big-par .fragment}
+
+##  ¿Quién explota esta información? {transition="convex"}
+
+<br/>
+
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center;">
+  <img src="imagenes/ejemplo_empresas.png" style="width:400px; margin-right: 40px;" class="fragment" data-fragment-index="1"/>
+  <img src="imagenes/ingeniero_informatico.jpeg" style="width:400px;" class="fragment" data-fragment-index="2"/>
+</div>
+
+<p style="text-align: center; font-size: 1.3em;" class="medium-par fragment big-par">
+  ¿Científicas/os de datos?
+</p>
+<p style="text-align: center; font-size: 1.3em;" class="medium-par fragment big-par">
+  ¿Cientistas sociales?
+</p>
+
+
+# {background-color="white" transition="slide"}
+
+[¿Qué pasa con las ciencias sociales?]{.big-par2}
+
+
+##  Situación de las ciencias sociales {transition="convex"}
+
+<br/>
+
+[- **Incorporación tardía** de las CS a este nuevo escenario]{.medium-par .fragment}
+
+[- Durante los últimos años esto ha venido cambiando]{.medium-par .fragment}
+
+[- Cada vez se observan más cientistas sociales sumándose a la ciencia de datos e IA]{.medium-par .fragment}
+
+[- Sociólogas/os <br>
+- Economistas<br>
+- Cientistas políticas/os<br>
+- Lingüistas<br>
+- Periodistas<br>
+- Geógrafas/os<br>
+- Historiadoras/es]{.medium-par .fragment}
+
+
+[Aún las ciencias de la computación nos llevan una gran ventaja]{.big-par .fragment}
+
+
+##  Cambios en las ciencias sociales {transition="convex"}
+
+<br/>
+
+[- Aumento sustantivo en la **cantidad** y **variedad** de datos]{.medium-par .fragment}
+
+[- Cambios cuantitativos muy grandes, a veces implican saltos cualitativos (Salganik, 2018)]{.medium-par .fragment}
+
+<br>
+
+[-**¿Significa que los métodos tradicionales de las ciencias sociales quedan en el pasado?**]{.big-par .fragment .center}
+
+<br>
+
+[-**No necesariamente. Los métodos de tradicionales seguirán guiándonos, pero deben ser actualizados y complementados**]{.big-par .fragment .center}
+
+##  Las encuestas por muestreo {transition="convex"}
+
+<ul class="medium-par">
+  <li class="fragment">Metodología muy sofisticada (aproximadamente 100 años)</li>
+  <li class="fragment">Tiene sólidos fundamentos teóricos</li>
+  <li class="fragment">**Son muy costosas**
+    <ul>
+      <li>No pueden ser realizadas con demasiada periodicidad</li>
+      <li>No pueden ser demasiado grandes</li>
+    </ul>
+  </li>
+  <li class="fragment">La no respuesta es un fenómeno en aumento
+    <ul>
+      <li>Problemas de sesgo</li>
+      <li>Menor precisión</li>
+      <li>Aumento de costos</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="big-par fragment" style="font-size: 1.1em;">
+  ¿Alguien sabe cuánto costó la Encuesta CASEN 2024?
+</p>
+<p class="big-par fragment" style="font-size: 1.1em;">
+  ¿y el presupuesto del Censo 2024 **solo el año de su ejecución**?
+</p>
+
+##  Pobreza en Ruánda (Blumenstock *et al*, 2015) {transition="convex"}
+
+::: {.panel-tabset}
+
+### [celulares]{.medium-par}
+
+[Datos de 1.5 millones de clientes de celulares:]{.medium-par}
+
+[Cantidad<br> 
+Tiempo<br>
+Dirección<br>
+Red de contactos<br>
+etc.]{.medium-par}
+
+
+### [encuesta]{.medium-par}
+
+[Muestra de ~850 personas:]{.medium-par}
+
+  [Características de la vivienda, bienes, entre otras<br>
+  Índice de bienestar material (riqueza)]{.medium-par}
+
+[**Entrenaron un modelo para predecir riqueza**]{.medium-par}
+
+$y = f(DatosTelefono)$
+
+[Usaron el modelo para predecir fuera de muestra]{.medium-par}
+
+### [granularidad]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/granularidad.png" style="width:600px;">
+</div>
+
+
+### [comparación]{.medium-par}
+
+<div style="text-align: center;">
+  <img src="imagenes/comparacion_ruanda.png" style="width:900px;">
+</div>
+
+:::
 
 ## Aplicaciones de codificación automática {transition="convex"}
 
